@@ -4,6 +4,7 @@
   &__nav {
     position: relative;
     display: flex;
+    align-items: center;
     column-gap: 115px;
   }
 
@@ -31,6 +32,43 @@
     }
   }
 
+  &__form {
+    width: 300px;
+    position: relative;
+    &-input {
+      width: 100%;
+      padding: 20px 15px;
+      border: 1px solid #00C4F0;
+      border-radius: 8px;
+      outline: none;
+      background: transparent;
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #E2A100;
+      &::placeholder {
+        color: #E2A100;
+      }
+    }
+    &-btn {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      color: #2C2C2C;
+    }
+  }
+
   &__up {
     position: absolute;
     right: 0;
@@ -38,22 +76,11 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: transparent;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: .8s;
-    &:hover {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: .8s;
-    }
   }
 
 }
